@@ -63,27 +63,30 @@ class _ProdukDetailState extends State<ProdukDetail> {
     );
   }
 
-  void confirmHapus() {
-    AlertDialog alertDialog = AlertDialog(
-      content: Text("Yakin ingin menghapus data ini?"), // Hapus const pada Text
-      actions: [
-        OutlinedButton(
-          child: Text("Ya"),
-          onPressed: () {
-            // Tambahkan logika penghapusan data di sini
-            Navigator.pop(context);
-          },
-        ),
-        OutlinedButton(
-          child: Text("Batal"),
-          onPressed: () => Navigator.pop(context),
-        ),
-      ],
-    );
+ void confirmHapus() {
+  AlertDialog alertDialog = AlertDialog(
+ content: const Text("Yakin ingin menghapus data ini?"),
+ actions: [
+ //tombol hapus
+ OutlinedButton(
+ child: const Text("Ya"),
+ onPressed: () {
+ Navigator.push(
+ context,
+ MaterialPageRoute(
+ builder: (context) => ProdukForm(
+ produk: widget.produk!,
+ )));
+ },
+ ),
+ //tombol batal
+ OutlinedButton(
+ child: const Text("Batal"),
+ onPressed: () => Navigator.pop(context),
+ )
+ ],
+ );
 
-    showDialog(
-      builder: (context) => alertDialog,
-      context: context,
-    );
-  }
+ showDialog(builder: (context) => alertDialog, context: context);
+ }
 }
