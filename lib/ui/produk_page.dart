@@ -1,7 +1,7 @@
- import 'package:flutter/material.dart';
- import 'package:tokokita/model/produk.dart';
- import 'package:tokokita/ui/produk_detail.dart';
- import 'package:tokokita/ui/produk_form.dart';
+import 'package:flutter/material.dart';
+import 'package:tokokita/model/produk.dart';
+import 'package:tokokita/ui/produk_detail.dart';
+import 'package:tokokita/ui/produk_form.dart';
 
  class ProdukPage extends StatefulWidget {
  const ProdukPage({Key? key}) : super(key: key);

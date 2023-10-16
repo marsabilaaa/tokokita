@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:tokokita/model/produk.dart';
 
  class ProdukForm extends StatefulWidget {
- Produk? produk;
-
- ProdukForm({Key? key, this.produk}) : super(key: key);
+  Produk? produk;
+  ProdukForm({Key? key, this.produk}) : super(key: key);
 
  @override
  _ProdukFormState createState() => _ProdukFormState();
@@ -34,7 +33,7 @@ import 'package:tokokita/model/produk.dart';
  _kodeProdukTextboxController.text = widget.produk!.kodeProduk!;
  _namaProdukTextboxController.text = widget.produk!.namaProduk!;
  _hargaProdukTextboxController.text =
- widget.produk!.hargaProduk.toString(); 38. });
+ widget.produk!.hargaProduk.toString();});
  } else {
  judul = "TAMBAH PRODUK";
  tombolSubmit = "SIMPAN";
@@ -114,7 +113,7 @@ import 'package:tokokita/model/produk.dart';
  return OutlinedButton(
  child: Text(tombolSubmit),
  onPressed: () {
- var validate = _formKey.currentState!.validate();
+  var validate = _formKey.currentState!.validate();
  });
  }
  }

@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 
  class _RegistrasiPageState extends State<RegistrasiPage> {
  final _formKey = GlobalKey<FormState>();
- bool _isLoading = false;
+
 
  final _namaTextboxController = TextEditingController();
  final _emailTextboxController = TextEditingController();

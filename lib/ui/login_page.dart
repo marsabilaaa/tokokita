@@ -1,5 +1,5 @@
- import 'package:flutter/material.dart';
- import 'package:tokokita/ui/registrasi_page.dart';
+import 'package:flutter/material.dart';
+import 'package:tokokita/ui/registrasi_page.dart';
 
  class LoginPage extends StatefulWidget {
  const LoginPage({Key? key}) : super(key: key);
@@ -10,7 +10,7 @@
 
  class _LoginPageState extends State<LoginPage> {
  final _formKey = GlobalKey<FormState>();
- bool _isLoading = false;
+ 
 
  final _emailTextboxController = TextEditingController();
  final _passwordTextboxController = TextEditingController();

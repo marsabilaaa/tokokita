@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
- import 'package:tokokita/model/produk.dart';
- import 'package:tokokita/ui/produk_form.dart';
+import 'package:tokokita/model/produk.dart';
+import 'package:tokokita/ui/produk_form.dart';
 
  class ProdukDetail extends StatefulWidget {
  Produk? produk;
-
  ProdukDetail({Key? key, this.produk}) : super(key: key);
 
  @override
@@ -16,7 +15,9 @@ import 'package:flutter/material.dart';
  Widget build(BuildContext context) {
  return Scaffold(
  appBar: AppBar(
-title: const Text('Detail Produk'),body: Center( child:Column(
+  title: const Text('Detail Produk'),),
+  body: Center( child:
+  Column(
 children: [
 Text(
   "Kode : ${widget.produk!.kodeProduk}",
