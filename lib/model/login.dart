@@ -16,3 +16,4 @@ class Login {
       userEmail: obj['data']['user']['email'],
     );
   }
+}
